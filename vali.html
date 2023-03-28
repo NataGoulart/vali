@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite seu CEP:
+    <input type="text" id="cep" onkeyup="validarCEP();">
+    
+</body>
+<script>
+    function validarCEP()
+    {
+     //Acesse o site rogex101.com
+      expressao = /[0-9]{5}-[0-9]{3}/g; 
+      texto = cep.value;
+      resposta = expressao.test(texto);
+      if(resposta==true)
+      {
+        cep.classList.remove('errado');
+        cep.classList.add('certo');
+     }
+     if(resposta==false)
+     {
+         cep.classList.remove('certo');
+        cep.classList.add('errado');
+     }
+      o
+    }
+</script>
+</html>
